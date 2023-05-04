@@ -5,11 +5,12 @@ export default function HomePage() {
   return (
     <>
       {/* Predefined button  */}
-      <Web3Button icon="show" label="Connect Wallet" balance="show" />
+      <Web3Button label="Connect Wallet" />
+      {/* <Web3Button icon="show" label="Connect Wallet" balance="show" /> */}
       <br />
 
       {/* Network Switcher Button */}
-      <Web3NetworkSwitch />
+      {/* <Web3NetworkSwitch /> */}
       <br />
 
       {/* Custom button */}

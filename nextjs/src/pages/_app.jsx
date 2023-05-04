@@ -7,14 +7,7 @@ import { Web3Modal } from "@web3modal/react";
 import { useEffect, useState } from "react";
 import { configureChains, createClient, WagmiConfig } from "wagmi";
 import {
-  arbitrum,
-  avalanche,
-  bsc,
-  fantom,
-  gnosis,
-  mainnet,
-  optimism,
-  polygon,
+  bsc
 } from "wagmi/chains";
 import "../styles.css";
 
@@ -26,14 +19,7 @@ const projectId = process.env.NEXT_PUBLIC_PROJECT_ID;
 
 // 2. Configure wagmi client
 const chains = [
-  mainnet,
-  polygon,
-  avalanche,
-  arbitrum,
   bsc,
-  optimism,
-  gnosis,
-  fantom,
 ];
 
 const { provider } = configureChains(chains, [w3mProvider({ projectId })]);
