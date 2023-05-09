@@ -15,13 +15,13 @@ export default function CustomButton() {
     setLoading(false);
   }
 
-  function onClick() {
-    if (isConnected) {
-      disconnect();
-    } else {
-      onOpen();
-    }
-  }
+  // function onClick() {
+  //   if (isConnected) {
+  //     disconnect();
+  //   } else {
+  //     onOpen();
+  //   }
+  // }
 
   return (
     <button onClick={onClick} disabled={loading}>
